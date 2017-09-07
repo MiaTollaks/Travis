@@ -14,11 +14,16 @@ section.mentoring {
   /* line 15, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
   section.mentoring .faces {
     list-style: none;
-    background: pink;
     margin: -50px 0;
     height: calc(100% + 100px);
-    padding: 0; }
-  /* line 23, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+    padding: 0;
+    position: relative;
+    top: 800px;
+    transition: all .3s ease-in-out; }
+    /* line 25, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+    section.mentoring .faces.launched {
+      top: 0px; }
+  /* line 28, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
   section.mentoring .face {
     height: 80px;
     width: 80px;
@@ -27,8 +32,14 @@ section.mentoring {
     border-radius: 50%;
     margin-bottom: 35px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    position: relative; }
-  /* line 35, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+    position: relative;
+    cursor: pointer; }
+    /* line 40, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+    section.mentoring .face.back-btn {
+      background: white url("../images/back.svg") center no-repeat;
+      background-size: 15px 26px;
+      display: none; }
+  /* line 47, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
   section.mentoring .bubble {
     opacity: 0;
     position: absolute;
@@ -41,12 +52,33 @@ section.mentoring {
     border-radius: 40px 40px 40px 5px;
     border: 3px solid white;
     pointer-events: none;
-    transition: all 0.3s cubic-bezier(0, 0.53, 0.34, 1.5);
+    transition: all 0.2s cubic-bezier(0, 0.53, 0.34, 1.5);
     transform: scale(0);
     transform-origin: bottom left; }
-  /* line 52, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
-  section.mentoring .face:hover .bubble {
+  /* line 64, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+  section.mentoring .face.has-bubble-open .bubble {
     opacity: 1;
     transform: scale(1); }
+
+@media (max-width: 640px) {
+  /* line 72, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+  section.mentoring .faces {
+    margin: 0;
+    width: 690px;
+    top: 230px;
+    left: 0px; }
+  /* line 78, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+  section.mentoring .face {
+    display: inline-block;
+    margin-right: 35px; }
+    /* line 82, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+    section.mentoring .face.back-btn {
+      display: inline-block; }
+  /* line 85, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-mentoring.sass */
+  section.mentoring .bubble {
+    bottom: 100px;
+    left: 0px;
+    box-sizing: border-box;
+    margin-left: 0; } }
 
 /*# sourceMappingURL=home-mentoring.css.map */

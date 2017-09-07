@@ -1,22 +1,19 @@
-mixin face
-    li.face(style="background-image: url(http://fillmurray.com/80/80);")
+mixin face(face, words, name)
+    li.face(style="background-image: url(#{face});")
         .bubble 
-            p Admodum eu duis. Duis occaecat ubi arbitrantur do offendit illum arbitror aut anim 
-            cite - Natahn Jacons
+            p #{words}
+            cite #{name}
 
 section.mentoring
     .flex.flex--center
         .col-1
             ul.faces
-             +face        
-             +face        
-             li.face.has-bubble-open(style="background-image: url(http://fillmurray.com/80/80);")
-                .bubble 
-                    p DISPLAY Admodum eu duis. Duis occaecat ubi arbitrantur do offendit illum arbitror aut anim 
-                    cite - !!Natahn Jacons        
-             +face        
-             +face        
-             +face        
+             +face("/assets/images/faces/1.jpg","hei","Navn Navesen") 
+             +face("/assets/images/faces/2.jpg","hei","Navn Navesen") 
+             +face("/assets/images/faces/3.jpg","hei","Navn Navesen") 
+             +face("/assets/images/faces/4.jpg","hei","Navn Navesen") 
+             +face("/assets/images/faces/5.jpg","hei","Navn Navesen")
+             li.back-btn.face
                 
         .col-1
             p.home-lead.outdented ...Mentoring people like you..

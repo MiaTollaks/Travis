@@ -69,9 +69,13 @@
   /* line 70, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
   .home-lead.outdented {
     text-indent: -0.8em; }
-    @media (max-width: 640px) {
-      /* line 70, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
-      .home-lead.outdented {
-        text-indent: 0; } }
+
+@media (max-width: 640px) {
+  /* line 74, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .home-lead {
+    text-align: center; }
+  /* line 76, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .outdented {
+    text-indent: 0; } }
 
 /*# sourceMappingURL=home.css.map */
