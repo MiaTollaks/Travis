@@ -3,3 +3,12 @@
 
 @import "1-base/vars";
 @import "1-base/base";
+
+@import "2-modules/buttons.sass";
+@import "2-modules/flex-video.sass";
+
+@import "3-sections/header.sass";
+@import "3-sections/home-about.sass";
+@import "3-sections/home-youtube.sass";
+
+@import "4-layout/home.sass";

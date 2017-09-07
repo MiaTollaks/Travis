@@ -1,0 +1,19 @@
+/* line 1, /Users/miatollaksvik/Desktop/travis/assets/css/2-modules/flex-video.sass */
+.flex-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.3%;
+  position: relative; }
+
+/* line 7, /Users/miatollaksvik/Desktop/travis/assets/css/2-modules/flex-video.sass */
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0; }
+
+/*# sourceMappingURL=flex-video.css.map */

@@ -1,0 +1,77 @@
+/* line 1, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+.home-wrap {
+  display: flex;
+  min-height: 100vh; }
+  @media (max-width: 775px) {
+    /* line 1, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+    .home-wrap {
+      display: block; } }
+
+/* line 8, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+.home-sections {
+  flex: 1; }
+  /* line 11, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .home-sections section {
+    padding: 50px 0; }
+  /* line 16, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .home-sections .flex {
+    display: flex; }
+  /* line 20, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .home-sections .flex--center {
+    justify-content: center; }
+  /* line 23, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .home-sections .flex--space-around {
+    justify-content: space-around; }
+  /* line 26, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .home-sections .order-first {
+    order: -1; }
+
+/* line 30, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+.col-1 {
+  width: 320px;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+/* line 35, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+.col-2 {
+  max-width: 640px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%; }
+
+/* line 41, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+.col-50 {
+  width: 50%;
+  border: 1px solid black; }
+
+/* line 46, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+.push-right {
+  margin-left: 330px; }
+
+@media (max-width: 640px) {
+  /* line 50, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .home-sections .flex {
+    display: block; }
+  /* line 53, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .col-1 {
+    width: 100%; }
+  /* line 56, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .col-50 {
+    width: auto; }
+  /* line 59, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .push-right {
+    margin-left: 10px; } }
+
+/* line 65, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+.home-lead {
+  font-size: 36px;
+  line-height: 1.1; }
+  /* line 70, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+  .home-lead.outdented {
+    text-indent: -0.8em; }
+    @media (max-width: 640px) {
+      /* line 70, /Users/miatollaksvik/Desktop/travis/assets/css/4-layout/home.sass */
+      .home-lead.outdented {
+        text-indent: 0; } }
+
+/*# sourceMappingURL=home.css.map */
