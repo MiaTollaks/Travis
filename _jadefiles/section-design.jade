@@ -1,0 +1,30 @@
+mixin design-img(link, img, color)
+    a(href="#{link}" data-color="#{color}").design-img-link
+        img(src="assets/images/design/#{img}")
+                
+
+section.design
+    .flex.flex--center
+        .col-50.flex.flex--center.dribble(data-orig-color="#ea4c89")
+            .col-1
+                p.home-lead ...Updating Dribble...
+                +design-img('','drib-1.jpg', 'orange')
+                +design-img('','drib-2.jpg', 'lightgreen')
+                +design-img('','drib-3.png', 'teal')
+                +design-img('','drib-4.jpg', 'pink')
+                +design-img('','drib-5.jpg', 'lightblue')
+                +design-img('','drib-6.jpg', 'coral')
+                .cf
+                a(href="#").home-cta See more on Dribbble
+
+        .col-50.flex.flex--center.behance
+            .col-1
+                p.home-lead ...and behance...
+                +design-img('','be-1.png', 'orange')
+                +design-img('','be-2.jpg', 'teal')
+                +design-img('','be-3.jpg', 'pink')
+                +design-img('','be-4.jpg', 'lightgreen')
+                +design-img('','be-5.jpg', 'lightblue')
+                +design-img('','be-6.png', 'coral')
+                .cf
+                a(href="#").home-cta See more on Behance

@@ -1,14 +1,36 @@
 $(function(){
-   mentoringBubbleClick();  
-   setInterval(function(){ articleTada();}, 3000) 
+    mentoringBubbleClick();  
+    setInterval(function(){ articleTada();}, 3000)
+    designBGStuff();
+    
 });
 
+// DESIGN BG STUFF - change background-color
+function designBGStuff() {
+    // identify hover: design-img-link 
+    $('.design-img-link').hover(function(){
+        // find a color > apply color to background
+       $(this).parent().parent().css('background-color', $(this).data('color'));
+    }, function(){ 
+        // off > revert the color 
+        $(this).parent().parent().css('background-color', $(this).parent().parent().data('orig-color'));
+    });
+      
+    
+}
+
+
+
+// ARTICLE TADA - makes images wobbble by adding class with animation 
 function articleTada(){
     var randNum = Math.floor(Math.random() * $('.article-thumb').length) +1 
     
     $('.article-thumb').eq(randNum).addClass('is-emph')
     .siblings().removeClass('is-emph');
 }
+
+
+// MENTORING BUBBLE CLICK - making the bubbles move by changing position 
 
 function mentoringBubbleClick() {
     $('.face').on('click', function(){

@@ -1,0 +1,44 @@
+/* line 1, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+.home-sections .design {
+  padding: 0px; }
+
+/* line 4, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+section.design {
+  color: white; }
+  /* line 9, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+  section.design .home-lead {
+    text-align: center;
+    font-size: 30px; }
+  /* line 13, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+  section.design .dribble, section.design .behance {
+    background-color: #ea4c89;
+    background-image: url(../images/design-bg.png);
+    padding: 50px 0;
+    transition: background-color 300ms ease-in-out; }
+    /* line 19, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+    section.design .dribble.behance, section.design .behance.behance {
+      background-color: #1769ff; }
+      /* line 22, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+      section.design .dribble.behance .home-cta, section.design .behance.behance .home-cta {
+        color: #1769ff; }
+  /* line 26, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+  section.design .home-cta {
+    font-size: 24px; }
+  /* line 29, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+  section.design .design-img-link {
+    display: block;
+    float: left;
+    width: calc(50% - 14px);
+    border: 2px solid white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px; }
+    /* line 41, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+    section.design .design-img-link img {
+      width: 100%;
+      display: block; }
+  /* line 45, /Users/miatollaksvik/Desktop/travis/assets/css/3-sections/home-design.sass */
+  section.design .cf {
+    clear: both;
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=home-design.css.map */
