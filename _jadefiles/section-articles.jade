@@ -1,0 +1,19 @@
+section.articles
+    .flex.flex--center
+    
+        .col-50
+            .article-wrap
+                {% for post in site.posts limit: 12 %}
+            
+                a(href="" style="background-image: url(../assets/images/posts/thumbnails/{{post.thumbnail}}").article-thumb
+                    .article-meta
+                        .name {{post.title}}
+                        .date {{post.date}}
+                {% endfor %}            
+            
+        .col-50.flex.flex--center.order-first
+            .col-1
+                .desc-wrap
+                
+                    p.home-lead.outdented ...writing and designing articles...
+                    a(href="#").home-cta See all articles

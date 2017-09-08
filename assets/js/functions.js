@@ -1,7 +1,14 @@
 $(function(){
-   mentoringBubbleClick(); 
-    
+   mentoringBubbleClick();  
+   setInterval(function(){ articleTada();}, 3000) 
 });
+
+function articleTada(){
+    var randNum = Math.floor(Math.random() * $('.article-thumb').length) +1 
+    
+    $('.article-thumb').eq(randNum).addClass('is-emph')
+    .siblings().removeClass('is-emph');
+}
 
 function mentoringBubbleClick() {
     $('.face').on('click', function(){
@@ -39,6 +46,7 @@ function mentoringBubbleClick() {
 $(window).scroll(function(){
    youtubeVidScroll(); 
     startMentoring();
+    startArticles();
     
 });
 
@@ -51,18 +59,31 @@ function youtubeVidScroll() {
 }
 
 
+// ATRTICLES SCROLL FUNCTION 
+function startArticles(){
+    var wScroll = $(window).scrollTop();
+    if($('section.articles').offset().top - $(window).height()/2 < wScroll) {
+        $('.article-thumb').each(function(i){
+            setTimeout(function(){
+            $('.article-thumb').eq(i).addClass('is-visible');
+            }, 200 * i);
+        });
+        
+    }
+    
+}
+
 // MENTORING FACE POP UP-FUNCTION 
 
 function startMentoring(){
     var wScroll = $(window).scrollTop();
     
-    if($('section.mentoring').offset().top - 500 < wScroll){ 
-        
+    if($('section.mentoring').offset().top - $(window).height()/2 < wScroll) {
         if($(window).width() > 640) {
             // make faces launch up on desktop view
             $('.faces').addClass('launched');
 
-            if(!$('.face').hasClass('has-bubble-open') && !$this.hasClass('back-btn')) {
+            if(!$('.face').hasClass('has-bubble-open') && !$(this).hasClass('back-btn')) {
                 
                 //make bubble appear on third face after 400ms
                 setTimeout(function(){
@@ -74,7 +95,7 @@ function startMentoring(){
         }
     }
     
-};
+}
 
 // optimize for narrow view if resizing browser
 function mentoringNarrowStart(){
