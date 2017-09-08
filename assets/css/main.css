@@ -536,12 +536,23 @@ body {
     text-align: right; }
   .home-wrap header .site-nav li {
     margin-bottom: 10px; }
+    .home-wrap header .site-nav li.active {
+      font-weight: 700;
+      -webkit-animation-name: pulse;
+              animation-name: pulse;
+      -webkit-animation-duration: .5s;
+              animation-duration: .5s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; }
     .home-wrap header .site-nav li:last-child {
       margin-bottom: 0; }
+  .home-wrap header .site-nav a {
+    color: #999; }
   .home-wrap header .email-link {
     display: block;
     text-align: right;
-    padding-right: 20px; }
+    padding-right: 20px;
+    color: #333; }
   .home-wrap header .mobile-nav-toggle {
     display: none;
     width: 50px;
@@ -585,7 +596,10 @@ body {
   padding: 30px 0 20px;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  color: #999; }
+  .home-wrap .mobile-nav:hover, .home-wrap .mobile-nav:active {
+    color: #666; }
   .home-wrap .mobile-nav ul {
     list-style: none;
     margin: 0;
@@ -621,6 +635,28 @@ body {
     display: block;
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); } }
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); } }
 
 section.about {
   background-image: url("../images/about-bg.jpg");
