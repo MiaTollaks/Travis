@@ -997,6 +997,51 @@ section.notes {
     font-size: 12px;
     left: 10px; }
 
+section.podcast {
+  background-image: url(../images/podcast-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white; }
+  section.podcast .podcast-content {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px; }
+  section.podcast .podcast-thumb {
+    margin-right: 30px; }
+  section.podcast .podcast-text {
+    -ms-flex: 1;
+        flex: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  section.podcast .title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px; }
+  section.podcast .web {
+    color: white;
+    background: #8d16de; }
+  section.podcast .itunes {
+    color: white;
+    background: #13cdbf; }
+
+.home-footer {
+  color: white; }
+  .home-footer a {
+    color: white;
+    background-color: #e24040;
+    display: block;
+    width: 100%;
+    line-height: 6;
+    text-align: center;
+    font-size: 60px; }
+    .home-footer a:hover {
+      background-color: #cf2020;
+      transition: background 150ms ease-in-out; }
+
 .home-wrap {
   display: -ms-flexbox;
   display: flex;

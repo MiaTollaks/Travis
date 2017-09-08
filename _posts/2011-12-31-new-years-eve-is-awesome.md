@@ -1,7 +1,7 @@
 ---
 layout: default
 title: New Years eve is awesome
-thumbnail: post-1.png
+thumbnail: post-2.jpg
 
 ---
 

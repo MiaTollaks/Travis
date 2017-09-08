@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Slide to remember
-thumbnail: post-1.png
+thumbnail: post-5.jpg
 
 ---
 
